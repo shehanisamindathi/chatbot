@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f3efff;
+    color: #1e1b4b;
+  }
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(147, 131, 230, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(147, 131, 230, 0.45);
+}
+
+/* Markdown styling for bot messages */
+.markdown-light {
+  color: #2e285c;
+  line-height: 1.55;
+  font-size: 0.9rem;
+}
+
+.markdown-light p {
+  margin-bottom: 0.5rem;
+}
+.markdown-light p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-light h1, .markdown-light h2, .markdown-light h3 {
+  color: #1e1b4b;
+  font-weight: 700;
+  margin-top: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.markdown-light ul, .markdown-light ol {
+  margin-left: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.markdown-light ul { list-style-type: disc; }
+.markdown-light ol { list-style-type: decimal; }
+
+.markdown-light code:not(pre code) {
+  background-color: #ede8ff;
+  color: #5e4ee6;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.markdown-light pre {
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  background-color: #1e1b4b;
+  color: #f5f3ff;
+  padding: 0.75rem;
+  overflow-x: auto;
+  font-size: 0.8rem;
+}

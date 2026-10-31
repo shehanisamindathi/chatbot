@@ -1,0 +1,8 @@
+{
+  "name": "MERN ChatBot Pro",
+  "description": "Full-Stack MERN AI Chatbot built with MongoDB document persistence, Express REST & SSE streaming API, React interactive interface, and Node.js with Gemini 3.8 Flash.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
